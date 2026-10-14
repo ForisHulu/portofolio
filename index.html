@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foris Juniawan Hulu - Portofolio Profesional</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              200: '#bae0fd',
+              300: '#7cc7fb',
+              400: '#36a9f7',
+              500: '#0c8de4',
+              600: '#026fc2',
+              700: '#03589e',
+              800: '#074b83',
+              900: '#0c3f6e',
+            },
+            accent: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#f59e0b',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-100 selection:text-brand-900">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center gap-2">
+          <div class="w-3 h-3 rounded-full bg-brand-500"></div>
+          <a href="#" class="font-bold text-lg text-slate-900 tracking-tight">Foris Juniawan Hulu</a>
+        </div>
+        
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+          <a href="#tentang" class="hover:text-brand-600 transition-colors">Tentang</a>
+          <a href="#pengalaman" class="hover:text-brand-600 transition-colors">Pengalaman</a>
+          <a href="#proyek" class="hover:text-brand-600 transition-colors">Proyek</a>
+          <a href="#keahlian" class="hover:text-brand-600 transition-colors">Keahlian</a>
+          <a href="#sertifikat" class="hover:text-brand-600 transition-colors">Sertifikat</a>
+          <a href="#kontak" class="hover:text-brand-600 transition-colors">Kontak</a>
+        </nav>
+
+        <div class="hidden md:flex items-center">
+          <a href="https://wa.me/6282211392343?text=Halo%20Foris,%20saya%20tertarik%20dengan%20portofolio%20Anda." target="_blank" class="px-4 py-2 text-sm font-semibold text-slate-900 bg-accent-200 hover:bg-accent-300 rounded-full transition-all duration-200 shadow-sm hover:shadow">
+            Hubungi Saya
+          </a>
+        </div>
+
+        <button id="menu-btn" class="md:hidden p-2 text-slate-600 hover:text-slate-900">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-2">
+      <a href="#tentang" class="block py-2 text-slate-600">Tentang</a>
+      <a href="#pengalaman" class="block py-2 text-slate-600">Pengalaman</a>
+      <a href="#proyek" class="block py-2 text-slate-600">Proyek</a>
+      <a href="#keahlian" class="block py-2 text-slate-600">Keahlian</a>
+      <a href="#sertifikat" class="block py-2 text-slate-600">Sertifikat</a>
+      <a href="#kontak" class="block py-2 text-slate-600">Kontak</a>
+      <a href="https://wa.me/6282211392343?text=Halo%20Foris,%20saya%20tertarik%20dengan%20portofolio%20Anda." target="_blank" class="block w-full text-center py-2.5 font-semibold text-slate-900 bg-accent-200 rounded-full">Hubungi Saya</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative py-16 lg:py-24 bg-gradient-to-b from-brand-50/50 via-white to-slate-50 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100 border border-brand-200 text-brand-800 text-xs sm:text-sm font-semibold">
+            <span>🎓</span> SARJANA ILMU INFORMATIKA • UKDC SURABAYA (IPK 3.13)
+          </div>
+          
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
+            Halo, Saya <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-800">Foris Juniawan Hulu</span>
+          </h1>
+
+          <p class="text-lg sm:text-xl font-medium text-slate-700 leading-relaxed border-l-4 border-accent-400 pl-4">
+            Inovasi Teknologi Berbasis Data dan Kecerdasan Buatan untuk Solusi Masa Depan.
+          </p>
+
+          <p class="text-slate-600 leading-relaxed">
+            Lulusan S1 Ilmu Informatika Universitas Katolik Darma Cendika yang analitis, teliti, dan berpengalaman dalam pengembangan sistem web modern, kecerdasan buatan, serta kepemimpinan organisasi tingkat universitas. Siap berkontribusi sebagai IT Developer Staff / Staff Office.
+          </p>
+
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a href="#proyek" class="px-6 py-3 font-semibold text-white bg-brand-600 hover:bg-brand-700 rounded-xl transition-all duration-200 shadow-md shadow-brand-500/20 flex items-center gap-2">
+              Jelajahi Proyek
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+            <a href="https://wa.me/6282211392343?text=Halo%20Foris,%20saya%20tertarik%20dengan%20portofolio%20Anda." target="_blank" class="px-6 py-3 font-semibold text-slate-900 bg-accent-200 hover:bg-accent-300 rounded-xl transition-all duration-200 shadow-sm flex items-center gap-2">
+              <svg class="w-5 h-5 text-slate-800" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+              Hubungi Saya
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-md">
+            <div class="absolute -inset-1.5 bg-gradient-to-r from-brand-300 to-accent-300 rounded-3xl blur-md opacity-70"></div>
+            <div class="relative bg-white p-3 rounded-3xl shadow-xl border border-slate-100">
+              <img src="Foris_2.png" alt="Foris Juniawan Hulu" class="w-full h-auto rounded-2xl object-cover shadow-inner" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x500?text=Foris+Hulu';"/>
+              <div class="p-4 bg-slate-50/80 backdrop-blur rounded-xl border border-slate-100 mt-3 flex items-center justify-between">
+                <div>
+                  <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Status Availability</p>
+                  <p class="text-sm font-bold text-slate-800">Terbuka untuk Peluang Kerja</p>
+                </div>
+                <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5 animate-pulse"></span> Ready
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Tentang Saya -->
+  <section id="tentang" class="py-16 bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2">Profil Ringkas</h2>
+        <p class="text-3xl font-extrabold text-slate-900">Tentang Saya</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center font-bold text-xl mb-4">🎓</div>
+          <h3 class="font-bold text-lg text-slate-900 mb-2">Pendidikan Formal</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            S1 Ilmu Informatika - Universitas Katolik Darma Cendika (2022–2026). Menguasai dasar hingga penerapan kecerdasan buatan, rekayasa perangkat lunak, dan forensik digital.
+          </p>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-xl bg-accent-100 text-amber-700 flex items-center justify-center font-bold text-xl mb-4">👑</div>
+          <h3 class="font-bold text-lg text-slate-900 mb-2">Kepemimpinan (BEM)</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Mantan Ketua BEM Fakultas Teknik (2024–2025). Berpengalaman mengelola program strategis, kerja sama lintas divisi, penyusunan dokumentasi resmi, serta pemecahan masalah secara kolaboratif.
+          </p>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xl mb-4">💼</div>
+          <h3 class="font-bold text-lg text-slate-900 mb-2">Pengalaman Kerja Web</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Web Developer di PT. Sinar Anugerah Industri (2025–2026). Berhasil membangun profil perusahaan interaktif dengan standar UI/UX modern dan dokumentasi teknis lengkap.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Pengalaman -->
+  <section id="pengalaman" class="py-16 bg-slate-50 border-t border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2">Karir & Organisasi</h2>
+        <p class="text-3xl font-extrabold text-slate-900">Pengalaman Profesional</p>
+      </div>
+
+      <div class="max-w-4xl mx-auto space-y-6">
+        <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col md:flex-row gap-6 justify-between items-start">
+          <div class="space-y-2">
+            <span class="inline-block px-3 py-1 text-xs font-bold bg-brand-100 text-brand-800 rounded-md">2025 – 2026</span>
+            <h3 class="text-xl font-bold text-slate-900">Web Developer</h3>
+            <p class="text-brand-600 font-medium text-sm">PT. Sinar Anugerah Industri</p>
+            <p class="text-slate-600 text-sm leading-relaxed pt-2">
+              • Mengembangkan website profil perusahaan dengan UI/UX modern dan responsif.<br/>
+              • Menangani dokumentasi teknis, user manual, serta proses serah terima sistem secara profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col md:flex-row gap-6 justify-between items-start">
+          <div class="space-y-2">
+            <span class="inline-block px-3 py-1 text-xs font-bold bg-accent-100 text-amber-800 rounded-md">2024 – 2025</span>
+            <h3 class="text-xl font-bold text-slate-900">Ketua Badan Eksekutif Mahasiswa (BEM)</h3>
+            <p class="text-amber-700 font-medium text-sm">Fakultas Teknik - Universitas Katolik Darma Cendika</p>
+            <p class="text-slate-600 text-sm leading-relaxed pt-2">
+              • Memimpin organisasi mahasiswa tingkat fakultas dan mengelola pelaksanaan program kerja strategis.<br/>
+              • Membangun kolaborasi efektif dengan berbagai pihak untuk mendukung kegiatan akademik dan non-akademik.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Proyek -->
+  <section id="proyek" class="py-16 bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2">Showcase Produk</h2>
+        <p class="text-3xl font-extrabold text-slate-900">Proyek Pilihan</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden hover:shadow-lg transition flex flex-col justify-between">
+          <div class="p-6 space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center font-bold">📱</div>
+            <h3 class="text-lg font-bold text-slate-900">G.B Detector (Tactile Paving Detection)</h3>
+            <p class="text-xs font-semibold text-brand-600">Computer Vision • Android (Kotlin) • TensorFlow Lite</p>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Aplikasi asistif navigasi tunanetra berbasis Computer Vision untuk mendeteksi ubin pemandu secara real-time dan offline. Menggunakan modifikasi arsitektur SSD MobileNet V2 dan Bounded Path Continuity Scan.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden hover:shadow-lg transition flex flex-col justify-between">
+          <div class="p-6 space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center font-bold">🌐</div>
+            <h3 class="text-lg font-bold text-slate-900">Website PT Sinar Anugerah Industri</h3>
+            <p class="text-xs font-semibold text-brand-600">Laravel • React.js • Tailwind CSS</p>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Sistem informasi profil perusahaan berbasis web untuk mempresentasikan identitas perusahaan secara komprehensif, modern, dan profesional bagi mitra bisnis.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden hover:shadow-lg transition flex flex-col justify-between">
+          <div class="p-6 space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center font-bold">🍱</div>
+            <h3 class="text-lg font-bold text-slate-900">Website Pemesanan Angkringan Nyeni</h3>
+            <p class="text-xs font-semibold text-brand-600">Web App • UI/UX Design • Management System</p>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Sistem pemesanan kuliner interaktif yang mempermudah proses pemesanan menu makanan & minuman secara efisien, serta memberikan pengalaman terstruktur bagi pelanggan.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Keahlian -->
+  <section id="keahlian" class="py-16 bg-slate-50 border-t border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2">Kompetensi</h2>
+        <p class="text-3xl font-extrabold text-slate-900">Keahlian Utama</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+            <span>💻</span> Technical Skills & Office
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 bg-slate-100 text-slate-700 text-xs font-medium rounded-lg">Laravel</span>
+            <span class="px-3 py-1.5 bg-slate-100 text-slate-700 text-xs font-medium rounded-lg">React.js</span>
+            <span class="px-3 py-1.5 bg-slate-100 text-slate-700 text-xs font-medium rounded-lg">Kotlin</span>
+            <span class="px-3 py-1.5 bg-slate-100 text-slate-700 text-xs font-medium rounded-lg">Python</span>
+            <span class="px-3 py-1.5 bg-slate-100 text-slate-700 text-xs font-medium rounded-lg">TensorFlow Lite</span>
+            <span class="px-3 py-1.5 bg-slate-100 text-slate-700 text-xs font-medium rounded-lg">MySQL</span>
+            <span class="px-3 py-1.5 bg-slate-100 text-slate-700 text-xs font-medium rounded-lg">Git/GitHub</span>
+            <span class="px-3 py-1.5 bg-slate-100 text-slate-700 text-xs font-medium rounded-lg">MS Office</span>
+            <span class="px-3 py-1.5 bg-slate-100 text-slate-700 text-xs font-medium rounded-lg">Google Workspace</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+            <span>🤝</span> Soft Skills & Management
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 bg-accent-100 text-amber-900 text-xs font-medium rounded-lg">Problem Solving</span>
+            <span class="px-3 py-1.5 bg-accent-100 text-amber-900 text-xs font-medium rounded-lg">Leadership</span>
+            <span class="px-3 py-1.5 bg-accent-100 text-amber-900 text-xs font-medium rounded-lg">Public Speaking</span>
+            <span class="px-3 py-1.5 bg-accent-100 text-amber-900 text-xs font-medium rounded-lg">Kerja Sama Tim</span>
+            <span class="px-3 py-1.5 bg-accent-100 text-amber-900 text-xs font-medium rounded-lg">Manajemen Waktu</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Sertifikat -->
+  <section id="sertifikat" class="py-16 bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2">Pencapaian</h2>
+        <p class="text-3xl font-extrabold text-slate-900">Sertifikasi & Pemakalah</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 flex gap-4 items-start">
+          <div class="text-2xl">📜</div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-sm">Presenter - Konferensi Nasional KONSTELASI 2026</h4>
+            <p class="text-xs text-slate-500 mt-1">Sertifikat Presenter Rancang Bangun Website Profil PT. Sinar Anugerah Industri</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 flex gap-4 items-start">
+          <div class="text-2xl">🏆</div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-sm">Employability Skills - Job Ready (Basic)</h4>
+            <p class="text-xs text-slate-500 mt-1">Wadhwani Foundation (113 jam pelatihan)</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 flex gap-4 items-start">
+          <div class="text-2xl">💻</div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-sm">SQL (Basic) Certification</h4>
+            <p class="text-xs text-slate-500 mt-1">HackerRank Certified</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 flex gap-4 items-start">
+          <div class="text-2xl">🎨</div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-sm">Figma Course - Mobile & Web App UI/UX</h4>
+            <p class="text-xs text-slate-500 mt-1">Udemy Professional Certificate</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Kontak (Direct to WhatsApp) -->
+  <section id="kontak" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        
+        <div>
+          <h2 class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2">Mari Terhubung</h2>
+          <p class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Siap Berkontribusi di Perusahaan Anda</p>
+          <p class="text-slate-600 leading-relaxed mb-8">
+            Saya terbuka untuk posisi IT Developer Staff, Web Developer, maupun Staff Office. Jangan ragu untuk menghubungi saya melalui kontak di bawah ini.
+          </p>
+
+          <div class="space-y-4">
+            <div class="flex items-center gap-4 p-4 rounded-xl bg-white border border-slate-200">
+              <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">📱</div>
+              <div>
+                <p class="text-xs font-medium text-slate-500">Nomor WhatsApp / HP</p>
+                <p class="font-bold text-slate-900">082211392343</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 p-4 rounded-xl bg-white border border-slate-200">
+              <div class="w-10 h-10 rounded-lg bg-brand-100 text-brand-700 flex items-center justify-center font-bold">✉️</div>
+              <div>
+                <p class="text-xs font-medium text-slate-500">Email Resmi</p>
+                <p class="font-bold text-slate-900">foris.hulu25@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Mengirim Pesan Langsung ke WA -->
+        <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-xl">
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Kirim Pesan Langsung ke WhatsApp</h3>
+          <p class="text-slate-600 text-sm mb-6">Isi pesan di bawah ini, lalu klik tombol untuk mengirimkan pesan ke WhatsApp saya.</p>
+
+          <form id="waForm" class="space-y-4">
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Nama Lengkap / Perusahaan</label>
+              <input type="text" id="waName" required placeholder="Contoh: HRD PT Sinar Indah" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none text-sm">
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Isi Pesan</label>
+              <textarea id="waMessage" required rows="4" placeholder="Tuliskan tawaran posisi atau pertanyaan Anda di sini..." class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none text-sm"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 px-6 font-bold text-white bg-emerald-600 hover:bg-emerald-700 rounded-xl transition shadow-md shadow-emerald-600/20 flex items-center justify-center gap-2">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+              Kirim ke WhatsApp Saya
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 bg-white border-t border-slate-200 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>&copy; 2026 Foris Juniawan Hulu. All rights reserved.</p>
+      <p class="text-brand-700 font-medium">Inovasi Teknologi Berbasis Data dan Kecerdasan Buatan</p>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle mobile menu
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Handle Direct WhatsApp Form Submission
+    document.getElementById('waForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('waName').value;
+      const message = document.getElementById('waMessage').value;
+      
+      const phone = "6282211392343";
+      const encodedText = encodeURIComponent(`Halo Foris, saya ${name}.\n\n${message}`);
+      
+      const waUrl = `https://wa.me/${phone}?text=${encodedText}`;
+      window.open(waUrl, '_blank');
+    });
+  </script>
+</body>
+</html>
